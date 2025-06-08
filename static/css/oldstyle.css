@@ -1,0 +1,123 @@
+/*paleta de colores*/
+:root{
+    --I-color:#21242b;
+    --II-color:#2c3039;
+    --III-color:#3e434f;
+    --IV-color:#5e6575;
+    --V-color:#80899e;
+    --VI-color:#a8afbe;
+    --VII-color:#d3d6de;
+    --VIII-color:#f0f1f3;
+}
+
+body{
+    background-color: var(--I-color) !important;
+    width: 100%;
+    color: var(--VIII-color) !important;
+    margin-top: 50px;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: 1fr auto !important;
+}
+
+#main-container{
+    height: 100%;
+    place-items: center;
+}
+
+#photoPresentation{
+    padding: 5px;
+    background-color: var(--II-color);
+    place-items: center;
+    color: var(--VIII-color);
+    font-size: large;
+    border-radius: 20px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+#myPhoto{
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
+    margin: 20px;
+}
+
+#presentation-container{
+    padding: 50px;
+}
+
+#cv-skills{
+    margin: 10px;
+    padding: 0px;
+    place-items: center;
+    background-color: var(--I-color);
+    width: 100%;
+    display: flex;
+}
+
+#cv-container{
+    place-items: center;
+    margin: 10px;
+    background-color: var(--I-color);
+    width: 50%;
+    height: 350px;
+    grid-template-rows: 20% 60% 20%;
+    margin-right: auto;
+}
+
+#cv-title{
+    margin-top: 20px;
+}
+
+#cv iframe{
+    height: 200px;
+}
+
+#cv{
+    margin: 15px;
+}
+
+#btn-download-cv{
+    margin-bottom: 20px;
+}
+
+#skills-container{
+    flex-direction: start;
+    background-color: var(--I-color);
+    margin-top: auto;
+    justify-content: space-around;
+    margin: 20px;
+    width: 50%;
+    height: 350px;
+    margin-left: auto;
+    padding: 20px;
+}
+
+#lenguajes{
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.progress{
+    width: 200px;
+}
+
+footer{
+    background-color: var(--VIII-color);
+    margin: 0;
+    padding: 10px;
+    color: var(--I-color);
+}
+
+#footer-container{
+    min-width: 150px;
+    display: grid;
+}
+
+#contact-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
