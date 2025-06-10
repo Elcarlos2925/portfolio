@@ -41,11 +41,18 @@ html{
 .list, .social-media{
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 25px;
 }
 
 .social-media{
     margin-left: 50px;
+}
+
+.social-media li, .social-media a{
+    display: flex;
+    align-items: center;
+    color: var(--VIII-color);
 }
 
 #menu, .navbar label{
