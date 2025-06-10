@@ -1,9 +1,10 @@
 /*paleta de colores*/
 :root{
-    --I-color:#21242b;
-    --II-color:#2c3039;
-    --III-color:#3e434f;
-    --IV-color:#5e6575;
+    --I-color:#1a1d29;
+    --II-color:#3d3f4a;
+    --III-color:#7d8491;
+    --IV-color:#b1b2b5;
+
     --V-color:#80899e;
     --VI-color:#a8afbe;
     --VII-color:#d3d6de;
@@ -11,29 +12,29 @@
 }
 
 body{
-    background-color: var(--I-color) !important;
-    width: 100%;
-    color: var(--VIII-color) !important;
-    margin-top: 50px;
+    background-color: var(--I-color);
     display: grid;
     min-height: 100dvh;
-    grid-template-rows: 1fr auto !important;
+    grid-template-rows: 1fr auto;
 }
 
 #main-container{
-    height: 100%;
+    background-color: var(--I-color);
+    display: grid;
     place-items: center;
+    color: var(--VIII-color);
 }
 
 #photoPresentation{
-    padding: 5px;
-    background-color: var(--II-color);
-    place-items: center;
+    background-color: var(--I-color);
     color: var(--VIII-color);
-    font-size: large;
-    border-radius: 20px;
+    display: grid;
+    place-items: center;
     width: 90%;
     margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
 }
 
 #myPhoto{
@@ -45,42 +46,40 @@ body{
 }
 
 #presentation-container{
-    padding: 50px;
+    padding: 40px;
 }
 
 #cv-skills{
     margin: 10px;
     padding: 0px;
-    place-items: center;
+    display: flex;
+    text-align: start;
     background-color: var(--I-color);
     width: 100%;
-    display: flex;
+    height: auto;
 }
 
 #cv-container{
-    place-items: center;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: end;
+    margin: 0;
     background-color: var(--I-color);
     width: 50%;
     height: 350px;
-    grid-template-rows: 20% 60% 20%;
     margin-right: auto;
-}
-
-#cv-title{
-    margin-top: 20px;
+    color: var(--VIII-color);
+    margin: 20px;
+    padding: 20px;
 }
 
 #cv iframe{
     height: 200px;
 }
 
-#cv{
-    margin: 15px;
-}
-
-#btn-download-cv{
-    margin-bottom: 20px;
+#cv-card{
+    background-color: var(--VI-color);
 }
 
 #skills-container{
@@ -105,19 +104,66 @@ body{
 }
 
 footer{
-    background-color: var(--VIII-color);
-    margin: 0;
-    padding: 10px;
-    color: var(--I-color);
+  background-color: var(--VIII-color);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
 }
 
 #footer-container{
-    min-width: 150px;
-    display: grid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#footer-container h2{
+    margin-bottom: 20px;
 }
 
 #contact-container{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+}
+
+#mail, #phone, #linkedin, #github{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin: 10px;
+}
+
+#mail img, #phone img, #linkedin img, #github img{
+    margin-right: 10px;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.card-project{
+    margin-right: 15px;
+}
+
+.image-project img { 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.image-project img:hover { 
+        transform: scale(1.1);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+        filter: grayscale();
 }

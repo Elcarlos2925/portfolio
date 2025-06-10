@@ -1,97 +1,186 @@
 /*paleta de colores*/
 :root{
-    --I-color:#21242b;
-    --II-color:#2c3039;
-    --III-color:#3e434f;
-    --IV-color:#5e6575;
-    --V-color:#80899e;
+    --I-color:#1a1d29;
+    --II-color:#3d3f4a;
+    --III-color:#687f8b;
+    --IV-color:#7d8491;
+    --V-color:#b1b2b5;
+
     --VI-color:#a8afbe;
     --VII-color:#d3d6de;
     --VIII-color:#f0f1f3;
 }
 
-body{
-    background-color: var(--I-color);
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: 1fr auto;
+html{
+    scroll-behavior: smooth;
 }
+
+/*! Navbar*/
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--I-color);
+    padding: 15px;
+    color: var(--VIII-color);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--VIII-color);
+}
+
+.name{
+    margin-right: 50px;
+}
+
+.list, .social-media{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.social-media{
+    margin-left: 50px;
+}
+
+#menu, .navbar label{
+    display: none;
+    color: var(--VIII-color);
+}
+
+@media screen and
+(max-width: 600px){
+    .options{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .social-media{
+        margin: 0;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #menu:checked ~ .options{
+        max-height: 100%;
+    }
+}
+
+/*TODO: Main*/
 
 #main-container{
     background-color: var(--I-color);
-    display: grid;
-    place-items: center;
+    min-height: 100dvh;
     color: var(--VIII-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#photoPresentation{
-    background-color: var(--II-color);
-    color: var(--VIII-color);
-    display: grid;
-    place-items: center;
-    width: 90%;
-    margin-top: 50px;
-    border-radius: 20px;
-    text-align: center;
+#presentation{
+    background-color: var(--I-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#description{
+    background-color: var(--I-color);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+#title{
+    margin-right: auto;
+    background-color: var(--III-color);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#description p{
     font-size: large;
 }
 
+#carrer{
+    color: var(--III-color);
+}
+
+#photoPresentation{
+    filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.8));
+}
+
 #myPhoto{
-    mask-image: linear-gradient(
-        black 80%,
+        mask-image: linear-gradient(
+        rgb(255, 255, 255) 50%,
         transparent
     );
-    margin: 20px;
 }
 
-#presentation-container{
-    padding: 40px;
-}
-
-#cv-skills{
-    margin: 10px;
-    padding: 0px;
-    display: flex;
-    text-align: start;
+#presentation{
     background-color: var(--I-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-#cv-container{
+#description{
+    background-color: var(--I-color);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: end;
-    margin: 0;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.aboutMe-skills{
     background-color: var(--I-color);
-    width: 50%;
-    height: 350px;
-    margin-right: auto;
-    color: var(--VIII-color);
-    margin: 20px;
     padding: 20px;
-}
-
-#cv iframe{
-    height: 200px;
-}
-
-#cv-card{
-    background-color: var(--VI-color);
-}
-
-#skills-container{
-    flex-direction: start;
-    background-color: var(--I-color);
-    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-around;
-    margin: 20px;
-    width: 50%;
-    height: 350px;
-    margin-left: auto;
-    padding: 20px;
+    align-items: start;
+    flex-direction: row;
 }
+
+.skills-container, .about-me{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 100px;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+    background-color: var(--I-color);
+}
+
+
 
 #lenguajes{
     justify-content: start;
@@ -99,8 +188,67 @@ body{
 }
 
 .progress{
-    width: 200px;
+    width: 300px;
 }
+
+#text-about-me {
+    font-size:medium;
+}
+
+#cv-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: var(--I-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+@media screen and
+(max-width: 1100px){
+    #presentation, .aboutMe-skills{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #description, .skills-container, .about-me{
+        margin-top: 50px;
+        width: 90%;
+    }
+    #cv-container{
+        justify-content: center;
+    }
+}
+
+.projects-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#projects{
+    background-color: var(--I-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+}
+
 
 footer{
   background-color: var(--VIII-color);

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="photoPresentation">
+            <img id="myPhoto" class="img-fluid" src="../static/assets/img/foto.png" alt="personal photo">
+            <div id="presentation-container">
+                <h1 class="presentation">Hola, Soy Carlos Lozoya</h1>
+                <h3 class="presentation">
+                    Actualmente soy estudiante de octavo semestre de la carrera de 
+                    <strong>Ing. en Tecnologías de la Información y Comunicaciones</strong> en 
+                    el Tecnologíco Nacional de México.
+                </h3>
+            </div>
+        </div>
+        
+        <div id="cv-skills">
+            <div id="cv-container" class="container-lg">
+                <article class="card" style="width: 18rem;">
+                    <iframe src="../static/assets/pdf/CV.pdf" frameborder="0"></iframe>
+                    <div class="card-body" id="cv-card">
+                        <h5 class="card-title">CV</h5>
+                        <a href="../static/assets/pdf/CV.pdf" download="" class="btn btn-outline-dark">Download</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div id="skills-container">
+                <h2>Habilidades Técnicas</h2>
+                <div id="skills">
+                    <img src="../static/assets/icons/csharp.svg" alt="icon c#" width="40" height="40">
+                    <img src="../static/assets/icons/html.svg" alt="icon html" width="40" height="40">
+                    <img src="../static/assets/icons/css.svg" alt="icon css" width="40" height="40">
+                    <img src="../static/assets/icons/js.svg" alt="icon js" width="40" height="40">
+                    <img src="../static/assets/icons/mysql.svg" alt="icon mysql" width="40" height="40">
+                    <img src="../static/assets/icons/php.svg" alt="icon php" width="40" height="40">
+                    <img src="../static/assets/icons/git.svg" alt="icon git" width="40" height="40">
+                </div>
+                <div id="lenguajes">
+                    <h2>Idiomas</h2>
+                    <div id="espanol" class="lenguajes">
+                        <p>Español</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-secondary" style="width: 90%">Nativo</div>
+                        </div>
+                    </div>
+                    <div id="espanol" class="lenguajes">
+                        <p>Ingles</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-secondary" style="width: 33%">Básico</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Proyectos</h2>
+        
+        <section class="projects-container">
+            <div id="the-drop-coffee-web">
+                <article class="card card-project image-project" style="width: 18rem;">
+                    <a href="../templates/thedropcoffee.html">
+                        <img src="../static/assets/img/TheDropCoffee/1.png" alt="" class="card-img-top image-card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Drop Coffee</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="../templates/thedropcoffee.html" class="btn btn-secondary ">Mas Información</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </article>
+            </div>
+            
+            <div id="motor-inc">
+                <article class="card card-project image-project" style="width: 18rem;">
+                    <a href="../templates/motorsinc.html">
+                        <img src="../static/assets/img/Motors Inc/1.png" alt="" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Motors Inc.</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="../templates/motorsinc.html" class="btn btn-secondary ">Mas Información</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </article>
+            </div>
+
+            <div id="the-drop-coffee-web">
+                <article class="card card-project image-project" style="width: 18rem;">
+                    <a href="../templates/thedropcoffee.html">
+                        <img src="../static/assets/img/TheDropCoffee/1.png" alt="" class="card-img-top image-card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Drop Coffee</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="../templates/thedropcoffee.html" class="btn btn-secondary ">Mas Información</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer class="pt-5 pb-4">
+        <div id="footer-container">
+            <h2>Contacto</h2>
+            <div id="contact-container" class="footer">
+                <div id="email-phone">
+                    <div id="mail">
+                        <img src="../static/assets/icons/mail.svg" alt="icon mail" height="20">
+                        <p>Email: cl154204@gmail.com</p>
+                    </div>
+                    <div id="phone">
+                        <img src="../static/assets/icons/phone.svg" alt="icon phone" height="20">
+                        <p>Telefono: +52 664 479 6129</p>
+                    </div>
+                </div>
+                <di id="github-linkedin">
+                    <a id="github" href="https://github.com/Elcarlos2925">
+                        <img src="../static/assets/icons/github.svg" alt="icon github" height="25">
+                        <p>GitHub</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlos-lozoya-855b511a9" id="linkedin">
+                        <img src="../static/assets/icons/linkedin.svg" alt="icon linkedin" height="25">
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="../static/js/bootstrap.bundle.min.js"></script>
