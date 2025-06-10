@@ -1,14 +1,16 @@
 /*paleta de colores*/
 :root{
     --I-color:#1a1d29;
-    --II-color:#3d3f4a;
-    --III-color:#687f8b;
-    --IV-color:#7d8491;
-    --V-color:#b1b2b5;
-
-    --VI-color:#a8afbe;
-    --VII-color:#d3d6de;
-    --VIII-color:#f0f1f3;
+    --II-color:#2f364b;
+    --III-color:#343d58;
+    --IV-color:#3c4668;
+    --V-color:#495780;
+    --VI-color:#5d6f9a;
+    --VII-color:#7d8cb3;
+    --VIII-color:#abb5ce;
+    --IX-color:#d2d6e5;
+    --X-color:#ebedf3;
+    --XI-color:#f5f6fa;
 }
 
 html{
@@ -81,7 +83,7 @@ html{
 #main-container{
     background-color: var(--I-color);
     min-height: 100dvh;
-    color: var(--VIII-color);
+    color: var(--IX-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +112,7 @@ html{
 
 #title{
     margin-right: auto;
-    background-color: var(--III-color);
+    background-color: var(--VI-color);
     width: 150px;
     display: flex;
     justify-content: center;
@@ -124,7 +126,7 @@ html{
 }
 
 #carrer{
-    color: var(--III-color);
+    color: var(--VI-color);
 }
 
 #photoPresentation{
@@ -158,18 +160,19 @@ html{
     text-align: justify;
 }
 
-.aboutMe-skills{
+.aboutMe-cv{
     background-color: var(--I-color);
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-around !important;
     align-items: start;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
-.skills-container, .about-me{
+.about-me{
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -180,38 +183,139 @@ html{
     background-color: var(--I-color);
 }
 
+#cv-container{
+    display: flex;
+    background-color: var(--I-color);
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
 
+.card{
+    background-color: var(--VIII-color);
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#skills{
+    background-color: var(--I-color);
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,    
+        minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--I-color);
+}
+
+.bg-skill{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 120px;
+    min-height: 150px;
+    border-radius: 20px;
+    background-color: var(--II-color);
+}
+
+.bg-skill i{
+    color: var(--VIII-color);
+    font-size: 50px;
+}
+
+.name-skill{
+    color: var(--VI-color);
+    font-weight: bold;
+    font-size: medium;
+}
 
 #lenguajes{
-    justify-content: start;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 20px 0 100px 0;
+}
+
+#lenguajes h2{
+    text-align: center;
 }
 
 .progress{
     width: 300px;
 }
 
+.btns{
+    width: 200px;
+    background-color: var(--I-color);
+}
+
+.bg-secondary, .btn-more-info{
+    background-color: var(--VI-color) !important;
+    color: var(--X-color);
+}
+
+.btn-more-info:hover, .btn-more-info:hover{
+    background-color: var(--X-color) !important;
+    color: var(--VII-color) !important;
+    transition: all 0.5s;
+}
+
 #text-about-me {
     font-size:medium;
 }
 
-#cv-container{
+
+.projects-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
     width: 100%;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: var(--I-color);
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
 }
+
+.card-project{
+    margin-right: 15px;
+}
+
+.image-project img { 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.image-project img:hover { 
+        transform: scale(1.1);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+        filter: grayscale();
+}
+
 
 @media screen and
 (max-width: 1100px){
-    #presentation, .aboutMe-skills{
+    #presentation, .aboutMe-cv{
         flex-direction: column-reverse;
         flex-wrap: wrap;
         justify-content: center;
@@ -219,12 +323,19 @@ html{
         align-items: center;
     }
 
-    #description, .skills-container, .about-me{
+    #description, #cv-container, .about-me{
         margin-top: 50px;
         width: 90%;
     }
     #cv-container{
         justify-content: center;
+    }
+    .bg-skill{
+        min-width: 50px;
+        gap: 10px;
+    }
+    .bg-skill i{
+        font-size: 30px;
     }
 }
 
@@ -251,66 +362,58 @@ html{
 
 
 footer{
-  background-color: var(--VIII-color);
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 0;
+    background-color: var(--IX-color);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #footer-container{
-    width: 100%;
+    padding: 20px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 #footer-container h2{
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 #contact-container{
     display: flex;
-    flex-direction:row;
-    justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
 }
 
-#mail, #phone, #linkedin, #github{
+#email-phone{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
+    flex-direction: column;
 }
 
-#mail img, #phone img, #linkedin img, #github img{
-    margin-right: 10px;
-}
-
-.projects-container{
+#mail, #phone, #github, #linkedin{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
-.card-project{
-    margin-right: 15px;
+#github, #linkedin{
+    text-decoration: none;
+    color: var(--VI-color);
 }
 
-.image-project img { 
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+#mail, #phone{
+    text-decoration: none;
+    color: var(--IV-color);
 }
 
-.image-project img:hover { 
-        transform: scale(1.1);
-        border-radius: 10px 10px 10px 10px;
-        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
-        filter: grayscale();
+#github-linkedin{
+    display: flex;
+    flex-direction: column;
 }
