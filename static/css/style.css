@@ -13,6 +13,27 @@
     --XI-color:#f5f6fa;
 }
 
+@font-face {
+    font-family: 'ibm-plex-mono-bold';
+    src: url(../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ibm-plex-mono-italic';
+    src: url(../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'ibm-plex-mono-light';
+    src: url(../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf);
+}
+
+@font-face {
+    font-family: 'ibm-plex-mono';
+    src: url(../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -114,18 +135,37 @@ html{
     width: 40%;
     justify-content: center;
     align-items: center;
+}
+
+#description p{
     text-align: justify;
+    font-family: monospace;
 }
 
 #title{
     margin-right: auto;
+    font-size: small;
     background-color: var(--VI-color);
     width: 150px;
+    height: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.text-wrap{
+    margin-top: 15px;
+}
+
+#title p{
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px !important;
+    font-weight: bolder;
 }
 
 #description p{
@@ -188,6 +228,10 @@ html{
     align-items: start;
     text-align: justify;
     background-color: var(--I-color);
+}
+
+.about-me h1{
+    font-family: 'ibm-plex-mono';
 }
 
 #cv-container{
@@ -289,7 +333,13 @@ html{
 }
 
 #text-about-me {
+    font-family: 'ibm-plex-mono-light';
     font-size:medium;
+}
+
+#text-header-aboutMe{
+    font-family: 'ibm-plex-mono-italic';
+    font-size: large;
 }
 
 
