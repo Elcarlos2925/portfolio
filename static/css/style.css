@@ -253,7 +253,6 @@ html{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
 #skills{
@@ -262,8 +261,8 @@ html{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(
-        auto-fit,    
-        minmax(150px, 1fr));
+        auto-fit,
+        minmax(100px, 1fr));
     gap: 20px;
 }
 
@@ -342,15 +341,26 @@ html{
     font-size: large;
 }
 
-
 .projects-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
     width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#projects{
+    background-color: var(--I-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .card-project{
@@ -395,28 +405,6 @@ html{
         font-size: 30px;
     }
 }
-
-.projects-container{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-#projects{
-    background-color: var(--I-color);
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 20px;
-}
-
 
 footer{
     background-color: var(--IX-color);
