@@ -311,6 +311,10 @@ html{
     text-align: center;
 }
 
+#ingles{
+    margin-top: 15px;
+}
+
 .progress{
     width: 300px;
 }
@@ -333,7 +337,7 @@ html{
 
 #text-about-me {
     font-family: 'ibm-plex-mono-light';
-    font-size:medium;
+    font-size: medium;
 }
 
 #text-header-aboutMe{
