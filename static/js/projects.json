@@ -1,0 +1,26 @@
+[
+    {
+        "id":"1",
+        "img" : "../static/assets/img/TheDropCoffee/1.png",
+        "name" : "The Drop Coffee",
+        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
+        "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
+        "more" : "../templates/thedropcoffee.html"
+    },
+    {
+        "id":"2",
+        "img" : "../static/assets/img/Motors Inc/1.png",
+        "name" : "Motors Inc.",
+        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
+        "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
+        "more" : "../templates/motorsinc.html"
+    },
+    {
+        "id":"3",
+        "img" : "../static/assets/img/ThDropCoffeeWF/2.png",
+        "name" : "The Drop Coffee",
+        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
+        "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
+        "more" : "../templates/motorsinc.html"
+    }
+]

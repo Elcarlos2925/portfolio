@@ -388,6 +388,7 @@ html{
 }
 
 .badge{
+    margin-right: 5px !important;
     background-color: var(--IV-color);
 }
 

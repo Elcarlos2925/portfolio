@@ -11,256 +11,27 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <nav class="navbar">
-        <p class="name"><strong>Carlos</strong> Lozoya</p>
-        <input type="checkbox" id="menu">
-        <label for="menu"><i class="fa-solid fa-bars"></i></label>
-        <div class="options">
-            <ul class="list">
-                <div class="list">
-                    <li><a href="#aboutMe-cv">Sobre mí</a></li>
-                    <li><a href="#projects-container">Proyectos</a></li>
-                    <li><a href="#footer-container">Contacto</a></li>
-                </div>
-                <div class="social-media">
-                    <li>
-                        <a href="https://github.com/Elcarlos2925"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/carlos-lozoya-855b511a9"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar" id="navbar"></nav>
 
     <main id="main-container">
-        <section id="presentation">
-            <article id="description">
-                <div id="title">
-                    <p id="title-text">ING.TIC´s</p>
-                </div>
-                <p class="text-wrap">
-                    Actualmente soy estudiante de octavo semestre de la carrera de 
-                    <strong id="carrer">Ing. en Tecnologías de la Información y Comunicaciones</strong>
-                     en el Tecnologíco Nacional de México.
-                </p>
-            </article>
-            <div id="photoPresentation">
-                <img src="../static/assets/img/foto.png" alt="my photo" class="img-fluid" id="myPhoto">
-            </div>
-        </section>
+        <section id="presentation"></section>
 
-        <section class="aboutMe-cv" id="aboutMe-cv">
-            <section id="cv-container" class="container-lg">
-                <article class="card cv-card" style="width: 18rem;">
-                    <iframe src="../static/assets/pdf/CV.pdf" frameborder="0"></iframe>
-                    <div class="card-body" id="cv-card">
-                        <h5 class="card-title">CV</h5>
-                        <a href="../static/assets/pdf/CV.pdf" download="" class="btn btn-more-info">Download</a>
-                    </div>
-                </article>
-            </section>
+        <section class="aboutMe-cv" id="aboutMe-cv"></section>
 
-            <div class="about-me">
-                <h1>Hola, Soy Carlos Lozoya</h1>
-                <p id="text-about-me">
-                    <br>
-                    <span id="text-header-aboutMe">Tengo 21 años de edad y
-                     deseo impulsar mis conocimientos al área profesional</span>
-                     <br><br>
-                    Tengo 21 años de edad y deseo impulsar mis conocimientos 
-                    al área profesional para ganar experiencia y a su vez 
-                    implementar mis conocimientos en el mundo laboral.
-                    Tengo 21 años de edad y deseo impulsar mis conocimientos 
-                    al área profesional para ganar experiencia y a su vez 
-                    implementar mis conocimientos en el mundo laboral.</p>
-            </div>
-        </section>
+        <div class="skills-container" id="skill-container"></div>
 
-        <div class="skills-container" id="skill-container">
-            <h2>Habilidades Técnicas</h2>
-            <section id="skills">
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="devicon-csharp-plain"></i></span>
-                    </div>
-                    <p class="name-skill">C#</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="fa-brands fa-html5"></i></span>
-                    </div>
-                    <p class="name-skill">HTML</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="fa-brands fa-css3-alt"></i></span>
-                    </div>
-                    <p class="name-skill">CSS</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="fa-brands fa-square-js"></i></span >
-                    </div>
-                    <p class="name-skill">JS</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="fa-brands fa-php"></i></span>
-                    </div>
-                    <p class="name-skill">PHP</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="devicon-mysql-plain-wordmark"></i></span>
-                    </div>
-                    <p class="name-skill">MySQL</p>
-                </article>
-                <article class="skill-container">
-                    <div class="bg-skill">
-                        <span><i class="fa-brands fa-git-alt"></i></span>
-                    </div>
-                    <p class="name-skill">Git</p>
-                </article>
-            </section>
-            <section id="lenguajes">
-                <h2>Idiomas</h2>
-                <article id="espanol" class="lenguajes">
-                    <p>Español</p>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-secondary" style="width: 90%">Nativo</div>
-                    </div>
-                </article>
-                <article id="ingles" class="lenguajes">
-                    <p>Ingles</p>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-secondary" style="width: 33%">Básico</div>
-                    </div>
-                </article>
-            </section>
-        </div>
-
-        
-        <section class="projects-container" id="projects-container">
-            <h2>Proyectos</h2>
-            <div id="projects">
-                <div id="the-drop-coffee-web">
-                    <article class="card card-project image-project" style="width: 18rem;">
-                        <a href="../templates/thedropcoffee.html">
-                            <img src="../static/assets/img/TheDropCoffee/1.png" alt="" class="card-img-top image-card">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">The Drop Coffee</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="../templates/thedropcoffee.html" class="btn btn-more-info">Mas Información</a>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">
-                                <span class="badge">
-                                    HTML 
-                                </span>
-                                <span class="badge">
-                                    CSS 
-                                </span>
-                                <span class="badge">
-                                    JS 
-                                </span>
-                                <span class="badge">
-                                    PHP 
-                                </span>
-                                <span class="badge">
-                                    MySQL
-                                </span>
-                            </small>
-                        </div>
-                    </article>
-                </div>
-            
-                <div id="motor-inc">
-                    <article class="card card-project image-project" style="width: 18rem;">
-                        <a href="../templates/motorsinc.html">
-                            <img src="../static/assets/img/Motors Inc/1.png" alt="" class="card-img-top">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Motors Inc.</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="../templates/motorsinc.html" class="btn btn-more-info">Mas Información</a>
-                        </div>
-                        <div class="card-footer">
-                            <span class="badge">
-                                HTML 
-                            </span>
-                            <span class="badge">
-                                CSS 
-                            </span>
-                            <span class="badge">
-                                JS 
-                            </span>
-                            <span class="badge">
-                                PHP 
-                            </span>
-                            <span class="badge">
-                                MySQL
-                            </span>
-                        </div>
-                    </article>
-                </div>
-                
-                <div id="the-drop-coffee-web">
-                    <article class="card card-project image-project" style="width: 18rem;">
-                        <a href="../templates/thedropcoffee.html">
-                            <img src="../static/assets/img/TheDropCoffee/1.png" alt="" class="card-img-top image-card">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">The Drop Coffee</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="../templates/thedropcoffee.html" class="btn btn-more-info">Mas Información</a>
-                        </div>
-                        <div class="card-footer">
-                            <span class="badge">
-                                C#
-                            </span>
-                            <span class="badge">
-                                Windows Forms
-                            </span>
-                            <span class="badge">
-                                MySQL
-                            </span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <section class="projects-container" id="projects-container"></section>
     </main>
-    
-    <footer class="pt-1 pb-1">
-        <section id="footer-container">
-            <h2>Contacto</h2>
-            <article id="contact-container" class="footer">
-                <div id="email-phone">
-                    <div id="mail">
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        <p>Email: cl154204@gmail.com</p>
-                    </div>
-                    <div id="phone">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                        <p>Telefono: +52 664 479 6129</p>
-                    </div>
-                </div>
-                <div id="github-linkedin">
-                    <a id="github" href="https://github.com/Elcarlos2925">
-                        <span><i class="fa-brands fa-github"></i></span>
-                        <p>GitHub</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/carlos-lozoya-855b511a9" id="linkedin">
-                        <span><i class="fa-brands fa-linkedin"></i></span>
-                        <p>Linkedin</p>
-                    </a>
-                </div>
-            </article>
-        </section>
-    </footer>
+
+    <footer class="pt-1 pb-1" id="footer"></footer>
+
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/navbar.js"></script>
+    <script src="../static/js/presentation.js"></script>
+    <script src="../static/js/aboutme-cv.js"></script>
+    <script src="../static/js/skills.js"></script>
+    <script src="../static/js/projects.json"></script>
+    <script src="../static/js/projects.js"></script>
+    <script src="../static/js/footer.js"></script>
 </body>
 </html>
-<script src="../static/js/bootstrap.bundle.min.js" type="script"></script>

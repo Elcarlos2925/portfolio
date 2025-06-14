@@ -1,0 +1,11 @@
+.carrusel{
+    width: 90%;
+    margin: 20px 0 20px 0;
+}
+
+#description-proyect{
+    display: flex;
+    justify-content: justify;
+    max-width: 90%;
+    font-size: large;
+}
