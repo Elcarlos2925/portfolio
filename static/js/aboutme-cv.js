@@ -15,13 +15,16 @@ document.getElementById("aboutMe-cv").innerHTML =
                 <p id="text-about-me">
                     <br>
                     <span id="text-header-aboutMe">Tengo 21 años de edad y
-                     deseo impulsar mis conocimientos al área profesional</span>
+                     deseo desarrollar mis conocimientos en el área profesional</span>
                      <br><br>
-                    Tengo 21 años de edad y deseo impulsar mis conocimientos 
-                    al área profesional para ganar experiencia y a su vez 
-                    implementar mis conocimientos en el mundo laboral.
-                    Tengo 21 años de edad y deseo impulsar mis conocimientos 
-                    al área profesional para ganar experiencia y a su vez 
-                    implementar mis conocimientos en el mundo laboral.</p>
+                    
+                     Me considero una persona responsable y con ganas de seguir aprendiendo. 
+                     Mi objetivo es aplicar lo aprendido en entornos reales, enfrentar nuevos retos y aportar valor 
+                     en el área profesional mientras continúo creciendo tanto personal como laboralmente.
+                     <br><br>
+
+                     En mi tiempo libre me gusta jugar ajedrez, aprender por cuenta propia sobre temas como ciberseguridad, 
+                     redes, desarrollo web y mantenerme al tanto de novedades tecnológicas.
+                     </p>
             </div>
 `

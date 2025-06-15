@@ -6,7 +6,7 @@ document.getElementById("footer").innerHTML =
                 <div id="email-phone">
                     <div id="mail">
                         <span><i class="fa-solid fa-envelope"></i></span>
-                        <p>Email: cl154204@gmail.com</p>
+                        <p>Email: carlos.lozoya.tic@gmail.com</p>
                     </div>
                     <div id="phone">
                         <span><i class="fa-solid fa-phone"></i></span>

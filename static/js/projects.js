@@ -24,7 +24,7 @@ function loadProject(){
                         <div class="card-body">
                             <h5 class="card-title">${project.name}</h5>
                             <p class="card-text">${project.description}</p>
-                            <a href="${project.more}" class="btn btn-more-info">Mas Información</a>
+                            <a href="${project.more}" class="btn btn-more-info">Más Información</a>
                         </div>
                         <div class="card-footer">
                              ${project.requeriments}

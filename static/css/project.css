@@ -1,11 +1,95 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .carrusel{
-    width: 90%;
+    width: 80%;
     margin: 20px 0 20px 0;
 }
 
-#description-proyect{
+.carousel img{
+    border-radius: 15px !important;
+}
+
+#header{
     display: flex;
-    justify-content: justify;
-    max-width: 90%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#description-project{
+    display: flex;
+    text-align: justify;
+    max-width: 80%;
     font-size: large;
+}
+
+#bg-project{
+    margin-top: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-project img{
+    width: 100%;
+
+}
+
+#about-skills h2{
+    margin-top: 50px;
+}
+
+#about-skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#about-project{
+    justify-content: center;
+}
+
+.skills{
+    justify-content: center;
+}
+
+#code{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 5px;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+@media screen and
+(max-width: 1100px){
+    #description-project{
+        max-width: 90%;
+    }
+    #bg-project{
+    margin-top: 100px;
+    min-height: auto;
+    }
+    #about-skills{
+    min-height: auto;
+    }
+}
+
+footer h2{
+    color: var(--II-color);
 }

@@ -1,26 +1,26 @@
 [
     {
         "id":"1",
-        "img" : "../static/assets/img/TheDropCoffee/1.png",
+        "img" : "../static/assets/img/TheDropCoffee/quick-access.png",
         "name" : "The Drop Coffee",
-        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
+        "description" : "Consiste en una tienda en línea para la comercialización de productos cafeteros.",
         "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
         "more" : "../templates/thedropcoffee.html"
     },
     {
         "id":"2",
-        "img" : "../static/assets/img/Motors Inc/1.png",
+        "img" : "../static/assets/img/Motors Inc/quick-access.png",
         "name" : "Motors Inc.",
-        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
+        "description" : "Consiste en el desarrollo de un sitio web destinado a la gestión del mantenimiento de equipo.",
         "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
         "more" : "../templates/motorsinc.html"
     },
     {
         "id":"3",
-        "img" : "../static/assets/img/ThDropCoffeeWF/2.png",
+        "img" : "../static/assets/img/TheDropCoffeeWF/quick-access.png",
         "name" : "The Drop Coffee",
-        "description" : "Some quick example text to build on the card title and make up the bulk of the card’s content.",
-        "requeriments" : "<span class='badge'>HTML</span><span class='badge'>CSS</span><span class='badge'>JS</span><span class='badge'>PHP</span><span class='badge'>MySQL</span>",
-        "more" : "../templates/motorsinc.html"
+        "description" : "Consiste en un punto de venta que permite gestionar las operaciones de una cafetería.",
+        "requeriments" : "<span class='badge'>C#</span><span class='badge'>.Net Framework</span><span class='badge'>MySql</span>",
+        "more" : "../templates/thedropcoffeeWF.html"
     }
 ]

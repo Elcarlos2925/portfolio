@@ -54,7 +54,7 @@ document.getElementById("skill-container").innerHTML =
             </div>
         </article>
         <article id="ingles" class="lenguajes">
-            <p>Ingles</p>
+            <p>Inglés</p>
             <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar bg-secondary" style="width: 33%">Básico</div>
             </div>
