@@ -249,6 +249,24 @@ html{
     background-color: var(--VIII-color);
 }
 
+
+#img-cv{
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#img-cv img{
+    width: 100%;
+}
+
+#img-cv a{
+    padding: 0%;
+    width: 100%;
+}
+
+
+
 .skills-container{
     display: flex;
     flex-direction: column;

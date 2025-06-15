@@ -2,10 +2,14 @@ document.getElementById("aboutMe-cv").innerHTML =
 `
             <section id="cv-container" class="container-lg">
                 <article class="card cv-card" style="width: 18rem;">
-                    <iframe src="../static/assets/pdf/CV.pdf" frameborder="0"></iframe>
+                    <div id="img-cv">
+                        <a href="../static/assets/pdf/CV.pdf">
+                            <img src="../static/assets/img/CV.png" alt="CV">
+                        </a>
+                    </div>                    
                     <div class="card-body" id="cv-card">
                         <h5 class="card-title">CV</h5>
-                        <a href="../static/assets/pdf/CV.pdf" download="" class="btn btn-more-info">Download</a>
+                        <a href="../static/assets/pdf/CV.pdf" download="" class="btn btn-more-info">Descargar</a>
                     </div>
                 </article>
             </section>
